@@ -1,0 +1,644 @@
+/* 
+	light gray = #e6e6e6
+	medium gray = #d1cfcf
+	dark gray = #333333
+	light green = 
+	dark green = #009245
+*/
+
+
+@font-face {
+	font-family: 'Karla', sans-serif;
+	font-family: 'Rubia', serif;
+}
+
+
+body {
+	background-color: #333333;
+}
+#fixedbackground {
+	position: fixed;
+	background: #e6e6e6;
+	width: 100%;
+	height: 100%;
+}
+#main_container {
+	width: 100%;
+	height: 2000px;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+/* TOP */
+
+#bg {
+	
+} 
+
+#bg_star {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.star {
+	position: fixed;
+}
+#star_1 {
+	position: fixed;
+	background: url(../images/star_1.png);
+	background-size: 100%;
+	margin-left: -90px;
+	margin-top: -200px;
+	width: 750px;
+	height: 730px;
+	opacity: 0;
+}
+#star_2 {
+	position: fixed;
+	background: url(../images/star_2.png);
+	background-size: 100%;
+	width: 1000px;
+	height: 690px;
+	margin-left: 140px;
+	margin-top: 250px;
+	opacity: 0;
+}
+.paraxify{
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+#date {
+	position: fixed;
+	width: 250px;
+	height: 50px;
+	background: white;
+	right: 70px;
+	z-index: 100;
+	top: -100px;
+	opacity: 0;
+}
+#date p {
+	font-family: Rubia;
+	color: #d1cfcf;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.footer {
+	position: fixed;
+	z-index: 100;
+}
+#search {
+	width: 600px;
+	height: 70px;
+	background: white;
+	bottom: -100px;
+	padding-bottom: 7px;
+	right: 300px;
+	z-index: 100;
+	opacity: 0;
+}
+#mag {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 40px;
+	height: 40px;
+	background:  url(../images/search_1.png);
+	background-size: 130%;
+}
+
+fieldset {
+	padding-left: 75px;
+	padding-top: 15px;
+}
+input, textarea {
+	width: 450px;
+	height: 30px;
+	outline: none;
+	text-shadow: none;
+	font-family: Rubia;
+	font-size: 1.5em;
+	color: #333333;
+	border: none ;
+	border-bottom: solid 2px #333333;
+}
+input:focus, textarea:focus {
+	outline:0;
+}
+::-webkit-input-placeholder {
+    color: #d1cfcf; 
+}
+::-moz-input-placeholder {
+    color: #d1cfcf;
+}
+::-ms-input-placeholder {
+    color: #d1cfcf;
+}
+
+button {
+	background: url(../images/search_2.png);
+	background-size: 100%;
+	background-position: 50% 50%;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	right: 35px;
+	top: 13px;
+}
+a button:hover {
+	transform: scale(.98);
+}
+
+#fullfooter {
+	width: 90%;
+	left: 5%;
+	bottom: 0px; /* changed from -100px for the slideUp/Down actions to work */
+	height: 70px;
+	background: white;
+	padding-top: 10px;
+	z-index: 90;
+	box-shadow: 0px 0px 5px #e6e6e6;
+	display: none;
+}
+
+#logo {
+	width: 240px;
+	height: 50px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 90%;
+	margin-left: 10px;
+	display: inline-block;
+	padding-top: 10px;
+}
+a #logo:hover {
+	transform: scale(.98);
+	
+	}
+
+ul.links {
+	position: absolute;
+	display: inline-block;
+	height: 40px;
+	width: 200px;
+	columns: 2;
+  	-webkit-columns: 2;
+  	-moz-columns: 2;
+	list-style: none;
+	margin-top: 10px;
+}
+li a {
+	text-decoration: none;
+	font-family: Karla;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: #333333;
+}
+li.subscribe a {
+	color: #009245;
+}
+li a:hover {
+	color: lightgray;
+}
+
+#weather {
+	position: absolute;
+	right: 0;
+	width: 150px;
+	top: 0px;
+	height: 50px;
+}
+#clouds {
+	background: url(../images/weather_1.png);
+	height: 45px;
+	background-size: 100%;
+	width: 45px;
+	display: inline-block;
+	margin-top: 13px;
+}
+h6 {
+	position: absolute;
+	width: 50px;
+	font-family: Karla;
+	font-size: 1.5em;
+	display: inline-block;
+	padding-top: 15px;
+	color: #009245;
+}
+#weather p {
+	font-family: rubia;
+	position: absolute;
+	display: inline-block;
+	padding-top: 40px;
+	font-size: .7em;
+	color: #e6e6e6;
+	font-style: italic;
+}
+
+#top {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: Karla;
+	font-size: 90pt;
+}
+#title {
+	position: relative;
+	width: 640px;
+	height: 105px;
+	left: 50%;
+	top: 40%;
+	margin-left: -320px;
+	margin-top:-100px;
+	letter-spacing: -5px;
+	font-weight: bold;
+	opacity: 0;
+}
+h1 {
+	color: #e6e6e6;
+	width: 180px;
+	display: inline;
+}
+h2 {
+	color: #333333;
+	width: 330px;
+	display: inline;
+}
+
+#arrow1 {
+	position: absolute;
+	background: url(../images/arrow_1.png);
+	width: 30px;
+	height: 50px;
+	bottom: 100px;
+	left: 50px;
+	opacity: 0;
+}
+#arrow2 {
+	position: absolute;
+	background: url(../images/arrow_1.png);
+	width: 30px;
+	height: 50px;
+	bottom: 100px;
+	right: 50px;
+	opacity: 0;
+}
+
+/* MAIN */
+
+#bottom_container {
+	position: absolute;
+	top: 103%;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200PX;
+	height: 1500px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#sidebar {
+	margin-top: 50px;
+	position: absolute;
+	width: 350px;
+	height: 460px;
+	background: white;
+	display: inline-block;
+}
+ul.side {
+	font-family: Karla;
+	list-style: none;
+	text-transform:uppercase;
+	color: #333333;
+	font-weight: bold;
+	font-size: 3em;
+	padding: 30px;
+}
+ul.side li a {
+	width: 200px;
+	padding: 5px;
+}
+li.subscribe2 a {
+	color: #009245;
+}
+
+ul.side li a:hover {
+	color: #e6e6e6;
+}
+
+video {
+	width: 300px;
+	margin-left: 25px;
+	opacity: .8;
+}
+
+#feed_container {
+	position: relative;
+	float: right;
+	width: 800px;
+	height: 1200px;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+#feature_1 #image1 {
+	background: url(../images/preview_feature.png) no-repeat;
+	background-size: 100%;
+	height: 235px;
+	opacity: .7;
+}
+.articleimage {
+		opacity: .7;
+		transition: ease-in .2s;
+}
+#feature_1 h3 {
+	font-size: 1.9em;
+	text-align: left;
+}
+a h3 {
+	color: #333333;
+	font-family: Karla;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: underline;
+	padding: 5px;
+	transition: ease-in .2s;
+}
+h4, h5 {
+	font-family: rubia;
+	color: #d1cfcf;
+	letter-spacing: .5px;
+	display: inline-block;
+}
+h4 {
+	color: #009245;
+	margin-top: 7px;
+	background: white;
+	padding: 10px;
+	width: 780px
+}
+h5 {
+	position: relative;
+	top: -25px;
+	float: right;
+	padding-right: 10px;
+}
+a p {
+	color: #333333;
+	font-family: karla;
+	padding: 10px;
+}
+.articleimage:hover {
+	opacity: 1;
+	transition: ease-in .2s;
+	cursor: pointer;
+}
+h3:hover {
+	color: white;
+	transition: ease-in .2s;
+	cursor: pointer;
+}
+
+h3 {
+	font-size: 1.5em;
+	text-align: right;
+}
+#article_1 {
+	width: 390px;
+	height: 300px;
+	position: absolute;
+	overflow: hidden;
+}
+#article_1 h4 {
+	width: 372px;
+}
+#article_1 #image2 {
+	background: url(../images/article_1.jpg);
+	background-size: 150%;
+	background-position: 70% 50%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 196px;
+	margin-top: 43px;
+}
+#article_1 h3 {
+	width: 180px;
+}
+
+#article_2 {
+	position: absolute;
+	width: 390px;
+	height: 300px;
+	right: 0;
+}
+#article_2 h4 {
+	width: 382px;
+}
+#article_2 #image3 {
+	background: url(../images/video_2.jpg);
+	background-size: 150%;
+	background-position: 70% 50%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 5px;
+		margin-top: 43px;
+}
+#article_2 h3 {
+	width: 170px;
+}
+
+#article_3 {
+	width: 390px;
+	height: 300px;
+	margin-top: 250px;
+	position: absolute;
+	overflow: hidden;
+}
+#article_3 h4 {
+	width: 372px;
+}
+#article_3 #image4 {
+	background: url(../images/article_3.jpg);
+	background-size: 150%;
+	background-position: 30% 0%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 196px;
+	margin-top: 43px;
+}
+#article_3 h3 {
+	width: 180px;
+}
+
+#article_4 {
+	position: absolute;
+	width: 390px;
+	height: 218px;
+	right: 0;
+	top: 635px;
+	background: url(../images/ad_chefstable2.jpg);
+	background-size: 100%;
+}
+
+#article_5 {
+	width: 390px;
+	height: 300px;
+	margin-top: 500px;
+	position: absolute;
+	overflow: hidden;
+}
+#article_5 h4 {
+	width: 372px;
+}
+#article_5 #image6 {
+	background: url(../images/article_2.jpg);
+	background-size: 150%;
+	background-position: 20% 0%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 196px;
+	margin-top: 43px;
+}
+#article_5 h3 {
+	width: 180px;
+}
+
+#article_6 {
+	position: absolute;
+	width: 390px;
+	height: 300px;
+	margin-top: 500px;
+	right: 0;
+}
+#article_6 h4 {
+	width: 382px;
+}
+#article_6 #image7 {
+	background: url(../images/article_5.jpg);
+	background-size: 150%;
+	background-position: 30% 80%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 5px;
+	margin-top: 43px;
+}
+#article_6 h3 {
+	width: 170px;
+}
+
+#load_more {
+	position: relative;
+	width: 800px;
+	top: 765px;
+	height: 60px;
+ 	left: 50%;
+	margin-left: -400px;
+	
+}
+#load_more a {
+	background-color: white;
+	position: relative;
+	top: 40%;
+	font-family: Rubia;
+	color: #d1cfcf;
+	padding: 20px 317px 20px 317px;
+	transition: .1s ease-in;
+	border: solid 1px white; 
+}
+#load_more a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px white; 
+	color: white;
+	transition: .1s ease-in;
+}
+
+#ads {
+	position: relative;
+	width: 600px;
+	height: 130px;
+	top: 1270px;
+	margin-left: 500px;
+}
+
+#ad2 {
+	position: absolute;
+	width: 18%;
+	height: 130px;
+	background: url(../images/ad_fossil.jpeg);
+	background-size: 100%;
+	left: 61%;
+}
+#ad3 {
+	position: absolute;
+	height: 130px;
+	width: 60%;
+	background: url(../images/ad_aveda.jpg);
+	background-size: 100%;
+}
+#ad4 {
+	position: absolute;
+	height: 130px;
+	width: 21.5%;
+	left: 79.5%;
+	background: url(../images/ad_warbyparker_1.jpg);
+	background-size: 100%;
+}
+a {
+	cursor: pointer;
+}
+
+
+
+/* 
+
+
+#article_4 {
+	position: absolute;
+	width: 390px;
+	height: 300px;
+	margin-top: 250px;
+	right: 0;
+}
+#article_4 h4 {
+	width: 382px;
+}
+#article_4 #image5 {
+	background: url(../images/article_2.JPG);
+	background-size: 150%;
+	background-position: 30% 80%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 5px;
+	margin-top: 43px;
+}
+#article_4 h3 {
+	width: 170px;
+}
+
+
+<a href="article_4"><div id="image5" class="articleimage"></div>
+				<h4>By Erin Golden</h4>
+				<h5>April 1, 2017 — 4:27pm</h5>
+				<a href="article_4"><h3>Minnesota House passes $2.2 billion plan to improve roads, bridges</h3></a>
+
+
+
+
+*/

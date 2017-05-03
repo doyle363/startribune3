@@ -1,0 +1,399 @@
+/* 
+	light gray = #e6e6e6
+	medium gray = #d1cfcf
+	dark gray = #333333
+	light green = 
+	dark green = #009245
+*/
+
+@font-face {
+	font-family: 'Karla', sans-serif;
+	font-family: 'Rubia', serif;
+}
+
+body {
+	background-color: #333333;
+}
+#fixedbackground {
+	position: fixed;
+	background: #e6e6e6;
+	width: 100%;
+	height: 100%;
+}
+#main_container {
+	width: 100%;
+	height: 1750px;
+	opacity: 1;
+	
+}
+a {
+	text-decoration: none;
+}
+
+
+#date {
+	position: fixed;
+	width: 250px;
+	height: 50px;
+	background: white;
+	right: 70px;
+	z-index: 100;
+	top: -100px;
+	opacity: 0;
+}
+#date p {
+	font-family: Rubia;
+	color: #d1cfcf;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.footer {
+	position: fixed;
+	z-index: 100;
+}
+#search4 {
+	width: 600px;
+	height: 70px;
+	background: white;
+	bottom: -100px;
+	padding-bottom: 7px;
+	right: 300px;
+	z-index: 120;
+	opacity: 0;
+}
+#mag {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 40px;
+	height: 40px;
+	background:  url(../images/search_1.png);
+	background-size: 130%;
+}
+
+fieldset {
+	padding-left: 75px;
+	padding-top: 15px;
+}
+input, textarea {
+	width: 450px;
+	height: 30px;
+	outline: none;
+	text-shadow: none;
+	font-family: Rubia;
+	font-size: 1.5em;
+	color: #333333;
+	border: none ;
+	border-bottom: solid 2px #333333;
+}
+input:focus, textarea:focus {
+	outline:0;
+}
+::-webkit-input-placeholder {
+    color: #d1cfcf; 
+}
+::-moz-input-placeholder {
+    color: #d1cfcf;
+}
+::-ms-input-placeholder {
+    color: #d1cfcf;
+}
+
+button {
+	background: url(../images/search_2.png);
+	background-size: 100%;
+	background-position: 50% 50%;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	right: 35px;
+	top: 13px;
+}
+a button:hover {
+	transform: scale(.98);
+}
+
+#fullfooter2 {
+	width: 90%;
+	left: 5%;
+	bottom: -100px; /* changed from -100px for the slideUp/Down actions to work */
+	height: 70px;
+	background: white;
+	padding-top: 10px;
+	z-index: 110;
+	opacity: 0;
+}
+#logo {
+	width: 240px;
+	height: 50px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 90%;
+	margin-left: 10px;
+	display: inline-block;
+	padding-top: 10px;
+}
+a #logo:hover {
+	transform: scale(.98);
+	
+	}
+
+ul.links {
+	position: absolute;
+	display: inline-block;
+	height: 40px;
+	width: 200px;
+	columns: 2;
+  	-webkit-columns: 2;
+  	-moz-columns: 2;
+	list-style: none;
+	margin-top: 10px;
+}
+li a {
+	text-decoration: none;
+	font-family: Karla;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: #333333;
+}
+li.subscribe a {
+	color: #009245;
+}
+li a:hover {
+	color: lightgray;
+}
+
+#weather {
+	position: absolute;
+	right: 0;
+	width: 150px;
+	top: 0px;
+	height: 50px;
+}
+#clouds {
+	background: url(../images/weather_1.png);
+	height: 45px;
+	background-size: 100%;
+	width: 45px;
+	display: inline-block;
+	margin-top: 13px;
+}
+h6 {
+	position: absolute;
+	width: 50px;
+	font-family: Karla;
+	font-size: 1.5em;
+	display: inline-block;
+	padding-top: 15px;
+	color: #009245;
+}
+#weather p {
+	font-family: rubia;
+	position: absolute;
+	display: inline-block;
+	padding-top: 40px;
+	font-size: .7em;
+	color: #e6e6e6;
+	font-style: italic;
+}
+
+/* MAIN */
+
+
+#container {
+	position: absolute;
+	width: 100%;
+	height: 1650px;
+}
+
+#title3 {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -550px;
+	width: 500px;
+	height: 300px;
+	z-index: 100;
+}
+h1 {
+	position: absolute;
+	font-family: Karla;
+	color: #333333;
+	font-size: 3.7em;
+	
+}
+.toptext2{
+	color: #009245;
+}
+#author {
+	font-family: rubia;
+	position: relative;
+	top: 247px;
+}
+#date3 {
+	position: relative;
+	font-family: karla;
+	top: 257px;
+	color: #333333;
+	opacity: .6;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+
+#article_container {
+	width: 850px;
+	position: absolute;
+	left: 60%;
+	margin-left: -555px;
+	padding-top: 70px;
+	z-index: 50;
+	padding: 30px;
+	height: 850px;
+}
+#article_container #text {
+	position: relative;
+	z-index: 100;
+	font-family: karla;
+	line-height: 1.4;
+	font-size: 1em;
+	opacity: 1;
+	padding: 100px;
+	padding-top: 0px;
+	top: 600px;
+}
+#text a {
+	font-weight: 800;
+	text-decoration: underline;
+	transition: ease-in .2s;
+	color: #009245;
+}
+#text a:hover {
+	color: black;
+	transition: ease-in .2s;
+}
+
+#articleimage_1 {
+	position: absolute;
+	background: url(../images/article_1.jpg);
+	background-size: 100%;
+	width: 750px;
+	height:500px;
+	top: 80px;
+	right: 40px;
+	opacity: .8;
+}
+#caption {
+	position: relative;
+	top: 510px;
+	font-family: rubia;
+	color: #009245;
+}
+
+#load_more {
+	position: absolute;
+	width: 790px;
+	top: 1545px;
+	height: 60px;
+	right: 0px;
+	z-index: 100;
+}
+#load_more a {
+	background-color: white;
+	position: relative;
+	top: 40%;
+	font-family: Rubia;
+	color: #d1cfcf;
+	padding: 20px 321px 20px 321px;
+	transition: .1s ease-in;
+	border: solid 1px white; 
+}
+#load_more a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px white; 
+	color: white;
+	transition: .1s ease-in;
+}
+
+#sidebar2 {
+	position: absolute;
+	left: 50%;
+	top: 350px;
+	height: 700px;
+	width: 200px;
+	margin-left: -550px;
+	
+}
+.ad {
+	width: 140px;
+}
+#ad1 {
+	position: relative;
+	background: url(../images/ad_chefstable.jpg);
+	height: 570px;
+	background-size: 100%;
+}
+#ad2 {
+	margin-top: 10px;
+	background: url(../images/ad_fossil.jpeg);
+	height: 170px;
+	background-size: 100%;
+}
+#ad3 {
+	margin-top: 10px;
+	background: url(../images/ad_warbyparker_1.jpg);
+	height: 140px;
+	background-size: 100%;
+}
+
+#suggested {
+	margin-top: 15px;
+	height: 300px;
+}
+h2 {
+	font-family: karla;
+	font-weight: 800;
+	text-decoration: underline;
+	font-size: 1.4em;
+}
+a #one {
+	margin-top: 5px;
+	width: 190px;
+	height: 90px;
+	background: url(../images/video_2.jpg);
+	background-size: 160%;
+	background-position: center center;
+	opacity: .7;
+	transition: ease-in .2s;
+}
+a #two {
+	margin-top: 5px;
+	width: 190px;
+	height: 90px;
+	background: url(../images/article_2.jpg);
+	background-size: 160%;
+	background-position: center 50%;
+	opacity: .7;
+	transition: ease-in .2s;
+}
+a #three {
+	margin-top: 5px;
+	width: 190px;
+	height: 90px;
+	background: url(../images/feature_4.jpg);
+	background-size: 160%;
+	background-position: 30% 65%;
+	opacity: .7;
+	transition: ease-in .2s;
+}
+a #one:hover, a #two:hover, a #three:hover {
+	opacity: 1;
+	transition: ease-in .2s;
+}
+
+
+
+
